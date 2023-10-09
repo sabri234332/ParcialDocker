@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  app:
+    image: parcialdocker:v1 # Nombre de la imagen y etiqueta
+    deploy:
+      replicas: 7
+    ports:
+      - "3000:3000"
